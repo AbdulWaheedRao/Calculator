@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtext"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:background="@drawable/stroke"
+        app:layout_constraintBottom_toTopOf="@id/cons2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline6"
+        app:layout_constraintRight_toRightOf="@id/guideline10"
+        app:layout_constraintTop_toTopOf="@id/guideline9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons2"
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline11"
+        app:layout_constraintLeft_toLeftOf="@id/guideline6"
+        app:layout_constraintRight_toRightOf="@id/guideline10">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/cons2"
+            app:layout_constraintTop_toTopOf="@id/cons2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnac"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="AC"
+                style="@style/my_theme"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnpercent"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="%"
+               style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndel"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="Del"
+                style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndiv"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="/"
+                style="@style/my_theme"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/linear1"
+            app:layout_constraintTop_toBottomOf="@id/linear1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="7"
+                style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="8"
+                style="@style/my_theme"
+               />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn9"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="9"
+                style="@style/my_theme"
+ />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnmul"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="*"
+                style="@style/my_theme"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/linear2"
+            app:layout_constraintTop_toBottomOf="@id/linear2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="4"
+                style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="5"
+                style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="6"
+                style="@style/my_theme"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnminus"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="-"
+                style="@style/my_theme"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/linear3"
+            app:layout_constraintTop_toBottomOf="@id/linear3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="1"
+                style="@style/my_theme"
+             />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="2"
+                style="@style/my_theme"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="3"
+                style="@style/my_theme"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnplus"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="+"
+                style="@style/my_theme"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/linear4"
+            app:layout_constraintTop_toBottomOf="@id/linear4">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn0"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                style="@style/my_theme"
+                android:text="0"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndot"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="."
+                style="@style/my_theme"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnequal"
+                android:layout_width="@dimen/tv_width"
+                android:layout_height="@dimen/tv_height"
+                android:text="="
+               style="@style/my_theme"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06"
+        app:layout_constraintGuide_begin="20dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94"
+        app:layout_constraintGuide_begin="20dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
